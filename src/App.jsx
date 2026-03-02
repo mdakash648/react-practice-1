@@ -6,6 +6,14 @@ import Demo from './components/common/Demo';
 import Test from './components/practice/Test';
 import Card1 from './components/practice/props/Card1';
 import Card2 from './components/practice/props/card2';
+import Card3 from './components/practice/props/Card3';
+import Paragraph from './components/practice/props/Paragraph';
+import CardWraper from './components/practice/props/CardWraper';
+import UseState from './components/practice/localState/UseState';
+import Counter from './components/practice/localState/Counter';
+import ParagraphShow from './components/practice/localState/ParagraphShow';
+import InputFieldLivePreview from './components/practice/localState/InputFieldLivePreview';
+// import UseState from './components/practice/localState/UseState';
 
 const App = () => {
   return (
@@ -16,7 +24,7 @@ const App = () => {
         <Test name='Akash' age='22' />
         <Test name='Nazmul' age='20' />
         <Test name='lkdsj' age='15' />
-        <div className='flex flex-wrap items-center justify-center gap-4 my-10'>
+        <CardWraper>
           <Card1
             img='https://images.unsplash.com/photo-1507525428034-b723cf961d3e'
             title='this is title'
@@ -31,8 +39,8 @@ const App = () => {
             tag={['test', 'food', 'fresh']}
             btnText='Read Me'
           />
-        </div>
-        <div className='flex flex-wrap items-center justify-center gap-4 my-10'>
+        </CardWraper>
+        <CardWraper>
           <Card2
             img='https://images.unsplash.com/photo-1507525428034-b723cf961d3e'
             name='Akash'
@@ -45,9 +53,16 @@ const App = () => {
             age='18'
             Profession='job'
           />
-        </div>
+        </CardWraper>
+        <Card3 product='mengo' price='500' isStock={true} />
+        <Card3 product='sdjfl' price='500' isStock={false} />
+        <Card3 product='lskfl' price='500' isStock={true} />
+        <Paragraph name='Akash' age='20' clas='10th' />
+        <UseState />
+        <Counter />
+        <ParagraphShow />
+        <InputFieldLivePreview />
       </Container>
-
       <Footer />
     </>
   );
