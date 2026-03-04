@@ -14,6 +14,7 @@ import Counter from './components/practice/localState/Counter';
 import ParagraphShow from './components/practice/localState/ParagraphShow';
 import InputFieldLivePreview from './components/practice/localState/InputFieldLivePreview';
 import SimpleLikeButton from './components/practice/localState/SimpleLikeButton';
+import DarkLiteMode from './components/practice/localState/DarkLiteMode';
 // import UseState from './components/practice/localState/UseState';
 
 const App = () => {
@@ -64,6 +65,7 @@ const App = () => {
         <ParagraphShow />
         <InputFieldLivePreview />
         <SimpleLikeButton />
+        <DarkLiteMode />
       </Container>
       <Footer />
     </>
