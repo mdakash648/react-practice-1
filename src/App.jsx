@@ -18,7 +18,7 @@ import DarkLiteMode from './components/practice/localState/DarkLiteMode';
 import CharacterCounter from './components/practice/localState/CharacterCounter';
 import SimpleTodo from './components/practice/localState/SimpleTodo';
 import LoginSimulation from './components/practice/localState/LoginSimulation';
-// import UseState from './components/practice/localState/UseState';
+import SimpleAccordion from './components/practice/localState/Accordion';
 
 const App = () => {
   return (
@@ -72,6 +72,7 @@ const App = () => {
         <CharacterCounter />
         <SimpleTodo />
         <LoginSimulation />
+        <SimpleAccordion />
       </Container>
       <Footer />
     </>
