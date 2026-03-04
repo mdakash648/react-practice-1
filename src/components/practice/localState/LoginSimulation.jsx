@@ -1,11 +1,12 @@
 import { useState } from 'react';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const LoginSimulation = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [isLogin, setIsLogin] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
-
+  const [isPassShow, setIspassShow] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
     setShowMessage(true);
@@ -17,7 +18,10 @@ const LoginSimulation = () => {
       setIsLogin(false);
     }
   };
-
+  const EyeIcon = isPassShow ? FaEye : FaEyeSlash;
+  const handlePassShow = () => {
+    setIspassShow(!isPassShow);
+  };
   return (
     <div className='bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md my-10 mx-auto'>
       <h2 className='text-3xl font-bold text-center text-gray-800 mb-6'>
@@ -54,13 +58,19 @@ const LoginSimulation = () => {
           <label className='block text-sm font-medium text-gray-600 mb-1'>
             Password
           </label>
-          <input
-            value={password}
-            type='password'
-            placeholder='Enter your password'
-            className='w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-200'
-            onChange={(e) => setPassword(e.target.value)}
-          />
+          <div className='flex items-center'>
+            <input
+              value={password}
+              type={isPassShow ? 'text' : 'password'}
+              placeholder='Enter your password'
+              className='w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-200'
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <EyeIcon
+              className='-ml-6.25 cursor-pointer'
+              onClick={() => handlePassShow()}
+            />
+          </div>
         </div>
 
         <button
