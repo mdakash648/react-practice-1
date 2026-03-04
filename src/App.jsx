@@ -17,6 +17,7 @@ import SimpleLikeButton from './components/practice/localState/SimpleLikeButton'
 import DarkLiteMode from './components/practice/localState/DarkLiteMode';
 import CharacterCounter from './components/practice/localState/CharacterCounter';
 import SimpleTodo from './components/practice/localState/SimpleTodo';
+import LoginSimulation from './components/practice/localState/LoginSimulation';
 // import UseState from './components/practice/localState/UseState';
 
 const App = () => {
@@ -70,6 +71,7 @@ const App = () => {
         <DarkLiteMode />
         <CharacterCounter />
         <SimpleTodo />
+        <LoginSimulation />
       </Container>
       <Footer />
     </>
