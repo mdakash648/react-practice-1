@@ -13,6 +13,7 @@ import UseState from './components/practice/localState/UseState';
 import Counter from './components/practice/localState/Counter';
 import ParagraphShow from './components/practice/localState/ParagraphShow';
 import InputFieldLivePreview from './components/practice/localState/InputFieldLivePreview';
+import SimpleLikeButton from './components/practice/localState/SimpleLikeButton';
 // import UseState from './components/practice/localState/UseState';
 
 const App = () => {
@@ -62,6 +63,7 @@ const App = () => {
         <Counter />
         <ParagraphShow />
         <InputFieldLivePreview />
+        <SimpleLikeButton />
       </Container>
       <Footer />
     </>
