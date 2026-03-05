@@ -19,6 +19,7 @@ import CharacterCounter from './components/practice/localState/CharacterCounter'
 import SimpleTodo from './components/practice/localState/SimpleTodo';
 import LoginSimulation from './components/practice/localState/LoginSimulation';
 import SimpleAccordion from './components/practice/localState/Accordion';
+import MultiInputForm from './components/practice/FromHandaling/MultiInputForm';
 
 const App = () => {
   return (
@@ -63,6 +64,7 @@ const App = () => {
         <Card3 product='sdjfl' price='500' isStock={false} />
         <Card3 product='lskfl' price='500' isStock={true} />
         <Paragraph name='Akash' age='20' clas='10th' />
+        {/* localState */}
         <UseState />
         <Counter />
         <ParagraphShow />
@@ -73,6 +75,8 @@ const App = () => {
         <SimpleTodo />
         <LoginSimulation />
         <SimpleAccordion />
+        {/* FromHandaling */}
+        <MultiInputForm />
       </Container>
       <Footer />
     </>
