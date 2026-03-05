@@ -20,6 +20,7 @@ import SimpleTodo from './components/practice/localState/SimpleTodo';
 import LoginSimulation from './components/practice/localState/LoginSimulation';
 import SimpleAccordion from './components/practice/localState/Accordion';
 import MultiInputForm from './components/practice/FromHandaling/MultiInputForm';
+import Todo from './components/practice/Todo';
 
 const App = () => {
   return (
@@ -77,6 +78,7 @@ const App = () => {
         <SimpleAccordion />
         {/* FromHandaling */}
         <MultiInputForm />
+        <Todo />
       </Container>
       <Footer />
     </>
