@@ -28,7 +28,7 @@ const Card2 = ({ img, name, age, Profession }) => {
             Profession : {Profession}
           </p>
 
-          <h2 className='w-full bg-slate-900 text-white py-2 rounded-xl font-medium hover:bg-slate-700 transition duration-300'>
+          <h2 className='w-full bg-slate-900 text-white p-2 rounded-xl font-medium hover:bg-slate-700 transition duration-300'>
             status : {status}
           </h2>
         </div>

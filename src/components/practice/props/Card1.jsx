@@ -21,7 +21,7 @@ const Card1 = ({ img, title, contact, tag, btnText }) => {
             {tag.map((item, index) => (
               <span
                 key={index}
-                className='text-xs bg-blue-100 text-blue-600 px-3 py-1 rounded-full'
+                className='text-xs bg-blue-100 text-blue-600 px-3 py-1 rounded-full cursor-pointer'
               >
                 {item}
               </span>

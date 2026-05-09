@@ -21,6 +21,8 @@ import LoginSimulation from './components/practice/localState/LoginSimulation';
 import SimpleAccordion from './components/practice/localState/Accordion';
 import MultiInputForm from './components/practice/FromHandaling/MultiInputForm';
 import Todo from './components/practice/Todo';
+import Useref from './components/practice/localState/InputFocus';
+import InputFocus from './components/practice/localState/InputFocus';
 
 const App = () => {
   return (
@@ -61,9 +63,11 @@ const App = () => {
             Profession='job'
           />
         </CardWraper>
-        <Card3 product='mengo' price='500' isStock={true} />
-        <Card3 product='sdjfl' price='500' isStock={false} />
-        <Card3 product='lskfl' price='500' isStock={true} />
+        <CardWraper>
+          <Card3 product='mengo' price='500' isStock={true} />
+          <Card3 product='sdjfl' price='500' isStock={false} />
+          <Card3 product='lskfl' price='500' isStock={true} />
+        </CardWraper>
         <Paragraph name='Akash' age='20' clas='10th' />
         {/* localState */}
         <UseState />
@@ -79,6 +83,7 @@ const App = () => {
         {/* FromHandaling */}
         <MultiInputForm />
         <Todo />
+        <InputFocus />
       </Container>
       <Footer />
     </>

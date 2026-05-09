@@ -4,7 +4,7 @@ const Card3 = ({ product, price, isStock }) => {
   return (
     <>
       {/* <!-- In Stock Card --> */}
-      <div className='max-w-sm w-full bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition duration-300'>
+      <div className='max-w-sm w-full bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition duration-300 my-3'>
         <h2 className='text-xl font-bold text-slate-800 mb-2'>{product}</h2>
 
         <p className='text-2xl font-semibold text-slate-900 mb-4'>{price}</p>
