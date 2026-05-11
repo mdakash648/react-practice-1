@@ -23,6 +23,8 @@ import MultiInputForm from './components/practice/FromHandaling/MultiInputForm';
 import Todo from './components/practice/Todo';
 import Useref from './components/practice/localState/InputFocus';
 import InputFocus from './components/practice/localState/InputFocus';
+import RefCounter from './components/practice/localState/RefCounter';
+import PreviousValueTracker from './components/practice/localState/PreviousValueTracker';
 
 const App = () => {
   return (
@@ -84,6 +86,8 @@ const App = () => {
         <MultiInputForm />
         <Todo />
         <InputFocus />
+        <RefCounter />
+        <PreviousValueTracker />
       </Container>
       <Footer />
     </>
